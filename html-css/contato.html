@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <input id="ckb-menu" type="checkbox" />
+    <label id="bt-x" for="ckb-menu">X</label>
+    <label id="bt-menu" for="ckb-menu">&#9776;</label>
+    <header>
+      <div id="logo">FULL STACK</div>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./portifolio.html"> Portfólio </a></li>
+          <li><a href="./contato.html">Contato </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="div-formulario">
+        <h1>VAMOS TOMAR UM CAFÉ?</h1>
+        <figure class="fig-resp">
+          <img src="./image/tomar-cafe-ed.jpg" alt="Venha tomar um cafe" />
+          <figcaption>Fig.1 - Tomando um cafe</figcaption>
+        </figure>
+        <h4>Quer desenvolver um projeto na web?</h4>
+        <p>
+          Preencha o formulário abaixo com as suas dúvidas, agende uma visita
+          virtual ou venha tomar um café e conversamos pessoalmente.
+        </p>
+        <form method="post">
+          <div>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+          <div>
+            <label for="tel">Telefone</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Digite seu telefone"
+            />
+          </div>
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+          </div>
+          <button type="submit" class="botao">Enviar</button>
+          <div class="sombra-bt"></div>
+        </form>
+      </div>
+      <div id="imagem">
+        <div>
+          <ul>
+            <li><h5>Conheça meu trabalho</h5></li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Linkedin</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <figure>
+          <img src="./image/tomar-cafe-ed.jpg" alt="Venha tomar um cafe" />
+          <figcaption>Fig.1 - Tomando um cafe</figcaption>
+        </figure>
+        <div class="seta">
+          <img src="./image/seta.svg" alt="seta" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container-flex">
+      <div>
+        <ul class="links-rodape">
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos e Condições</a></li>
+        </ul>
+      </div>
+
+      <div class="todos-direitos">
+        <p>© 2022 Todos os direitos Reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
