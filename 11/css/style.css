@@ -1,0 +1,177 @@
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-geral {
+    background-color: white;
+    max-width: 1198px;
+    margin: 0 auto;
+    padding: 70px 10%;
+}
+
+header {
+    font-size: 1.7rem;
+    height: 120px;
+    min-height: 120px;
+    border-bottom: solid 1px #c3c3c3;
+
+}
+
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1198px;
+    padding: 0 10%;
+
+}
+
+
+a {
+    color: #244158;
+}
+
+header>.container-header>img {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+li {
+
+    margin: 2px;
+    color: #707070;
+}
+
+p {
+    margin-top: 15px;
+    color: #707070;
+
+}
+
+nav>ul>li>a {
+    border-radius: 3px;
+    padding: 6px 11px;
+    transition: all 0.5s;
+
+}
+
+nav>ul>li>a:hover {
+    background-color: #244158;
+    color: #f0f0f0;
+    box-shadow: 0px 5px 10px 0px rgb(194, 194, 194);
+
+}
+
+/* nav>ul>li+li>a {
+    margin-left: 4px;
+} */
+
+section {
+    font-size: 1.85rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #244158;
+}
+
+h2 {
+    font-size: 2.6rem;
+    color: #244158;
+    margin-top: 70px;
+
+}
+
+h3 {
+    font-size: 2.3rem;
+    color: #244158;
+    margin-top: 70px;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #244158;
+    margin-top: 35px;
+}
+
+.container>img {
+    margin-top: 35px;
+}
+
+.container>h3+ol {
+    margin-top: 20px;
+    margin-left: 35px;
+
+}
+
+.container>h3+ol>li {
+    margin-top: 10px;
+}
+
+.container-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    max-width: 1198px;
+    height: 120px;
+}
+
+footer {
+    font-size: 1.5rem;
+    color: white;
+    background: #244158;
+}
+
+.container-footer>p {
+    margin: 0;
+    color: white;
+
+}
+
+@media(max-width: 740px) {
+    header>.container-header>img {
+        width: 150px;
+        margin: 10px auto 10px auto;
+    }
+
+    header {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 586px) {
+    .container-header {
+        justify-content: space-around;
+        margin: 0;
+        height: 100%;
+        max-width: 1198px;
+        padding: 0;
+        flex-direction: column;
+        min-width: 290PX;
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+
+}
