@@ -13,13 +13,13 @@ body {
     max-width: 1198px;
     margin: 0 auto;
     padding: 10% 10%;
+    border-bottom: solid 3px #f0f0f0;
 }
 
 header {
     font-size: 1.7rem;
     height: 120px;
     min-height: 120px;
-    /* border-bottom: solid 1px #c3c3c3; */
 
 }
 
@@ -32,8 +32,8 @@ header {
     height: 100%;
     max-width: 1198px;
     padding: 0 10%;
-    background: #f9f9f9;
-    border-bottom: solid 1px #c3c3c3;
+    background: #ffffff;
+    border-bottom: solid 3px #f0f0f0;
 
 }
 
@@ -152,9 +152,11 @@ footer {
     max-width: 1198px;
     margin: 0 auto;
     padding: 10% 10%;
+    border-bottom: solid 3px #f0f0f0;
 }
 
-/* OCULTA LOGO COGNITO */
+/* AJUSTA COGNITO */
+
 .cog-body~div {
     display: none !important;
 }
@@ -188,6 +190,10 @@ input[type=text] {
     border-radius: 3px !important;
 }
 
+.cog-page__navigation>button:hover {
+    box-shadow: 0px 5px 10px 0px rgb(194, 194, 194) !important;
+}
+
 .cog-body input[type=text] {
 
     font-size: 1.7rem !important;
@@ -197,6 +203,18 @@ input[type=text] {
 .cognito form {
     margin: 0 !important;
 }
+
+.cog-header__text h1 {
+    font-size: 3rem !important;
+}
+
+.cog-confirmation-message {
+    font-size: 1.85rem !important;
+    background-color: rgb(92, 253, 90) !important;
+    padding: 10px 20px !important;
+}
+
+/* RESPONSIVO */
 
 @media(max-width: 740px) {
     header>.container-header>img {
@@ -247,11 +265,26 @@ input[type=text] {
 
     p {
         font-size: 1.6rem;
-
     }
 
     ol {
         font-size: 1.6rem;
+    }
+
+    .cog-confirmation-message {
+        font-size: 1.5rem !important;
+    }
+
+    .cog-header__text h1 {
+        font-size: 2.3rem !important;
+    }
+
+    .cog-body input[type=text] {
+        font-size: 1.4rem !important;
+    }
+
+    .cog-label {
+        font-size: 1.5rem !important;
 
     }
 
