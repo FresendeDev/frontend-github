@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+      section {
+        margin-bottom: 100px;
+      }
+      input,
+      button {
+        display: block;
+        margin: 10px;
+      }
+    </style>
+    <script>
+      function obeterMedia() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+        var media = (a + b + c) / 3;
+        document.getElementById("resultado").innerHTML = "Resultado:" + media;
+        // console.log(a + b + c);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Logica Travessia do rio</h2>
+    <section>
+      <p>passo 1 = atravessa cabra</p>
+      <p>passo 2 = atravessa lobo e volta cabra</p>
+      <p>passo 3 = atravessa alfafa</p>
+      <p>passo 4 = atravessa cabra</p>
+    </section>
+    <section>
+      <h2>Calculo média</h2>
+      <p>Digite 3 números para calcular a média</p>
+      <input type="number" id="a" />
+      <input type="number" id="b" />
+      <input type="number" id="c" />
+      <button onclick="obeterMedia()">Calcular média</button>
+      <div id="resultado"></div>
+    </section>
+  </body>
+</html>
