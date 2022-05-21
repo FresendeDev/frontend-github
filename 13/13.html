@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mod 13</title>
+    <style>
+      .obs {
+        color: red;
+      }
+      .resp {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Resolva as operações:</h2>
+    <p>10 + 15 = 25</p>
+    <p>“10” + 2 = 102</p>
+    <p>“10” * 2 = 20</p>
+    <p>“10” / 3 = 3.3333333333333335</p>
+    <p>“10” % 3 = 1</p>
+    <p>10 + true = 11</p>
+    <p>10 == ”10” = true</p>
+    <p>10 === “10” = false</p>
+    <p>10 < 11 = true</p>
+    <p>10 > 12 = false</p>
+    <p>10 <= 10.1 = true</p>
+    <p>10 > 9.99 = true</p>
+    <p>10 != “dez” = true</p>
+    <p>10 + true = 11</p>
+    <p>“dez” + true = deztrue</p>
+    <p>10 + false = 10</p>
+    <p>10 * false = 0</p>
+    <p>true + true = 2</p>
+    <p>
+      10++ = 11
+      <span class="obs">
+        resposta node: "Uncaught SyntaxError: Invalid left-hand side expression
+        in postfix operation"
+      </span>
+    </p>
+    <p>
+      10-- = 9
+      <span class="obs">
+        resposta node: "Uncaught SyntaxError: Invalid left-hand side expression
+        in postfix operation"
+      </span>
+    </p>
+    <p>1 & 1 = 1</p>
+    <p>1 & 0 = 0</p>
+    <p>0 & 0 = 0</p>
+    <p>1 & 0 = 0<span class="obs"> Já respondido" </span></p>
+    <p>0 / 1 = 0</p>
+    <p>5 + 5 == 10 = true</p>
+    <p>“5” + ”5” == 10 = false</p>
+    <p>“5” * 2 > 9 = true</p>
+    <p>(10 + 10) * 2 = 40</p>
+    <p>10 + 10 * 2 = 30</p>
+
+    <h2>2. Responda as perguntas de acordo com as variáveis.</h2>
+    <p>
+      var branco = “preto”; <br />
+      var preto = “cinza”;<br />
+      var cinza = “branco”;<br />
+      var carro = “preto”;<br />
+      var valor = 30000;<br />
+      var prestacao = 750;
+    </p>
+    <p>a) branco == “branco” <span class="resp">false</span></p>
+    <p>b) branco == cinza <span class="resp">false</span></p>
+    <p>c) carro === branco <span class="resp">true</span></p>
+    <p>
+      d) var cavalo = carro == “preto” ? “cinza” : “marron”;
+      <span class="resp">"cinza"</span>
+    </p>
+    <p>
+      e) Quantas prestações são necessárias para pagar o valor do carro com uma
+      entrada de 3.000? Demonstre a operação.
+      <span class="resp">(valor - 3000) / prestacao = 36</span>
+    </p>
+    <p>
+      f) Somando as variáveis de cores é formada uma string de quantos
+      caracteres?
+      <span class="resp">branco.length + preto.length + cinza.length = 16</span>
+    </p>
+  </body>
+</html>
