@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 - Bootstrap - Testes</title>
+    <link rel="stylesheet" href="./bootstrap520/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="container container-geral border-start border-end p-0">
+    <section>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h1 class="mb-0 text-info">LOGO</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#produtos">Produtos</a>
+                <a class="nav-link" href="#contato">Contato</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <section id="sobre" class="mt-5">
+      <div class="container">
+        <h1>Sobre nós</h1>
+        <div class="row">
+          <div class="flex-column col-md-7 col-sm-12">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
+              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
+              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
+              commodi sapiente tempore! Iste.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
+              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
+              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
+              commodi sapiente tempore! Iste.
+            </p>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <img
+              class="img-fluid"
+              src="./img/pexels-energepiccom-159888.jpg"
+              alt="Análise Grpafica"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="mt-5">
+      <div class="container">
+        <h1>Produtos</h1>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-5">
+            <div class="card">
+              <img
+                src="./img/pexels-energepiccom-159888.jpg"
+                alt="Análise Tecnica"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-1"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 mb-5">
+            <div class="card">
+              <img
+                src="./img/pexels-energepiccom-159888.jpg"
+                alt="Análise Tecnica"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <a class="btn btn-primary" href="#produto-2"> Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="./img/pexels-energepiccom-159888.jpg"
+                alt="Análise Tecnica"
+                class="img-fluid"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <a class="btn btn-primary" href="#produto-3"> Ver Detalhes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mt-5">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <p>
+              Ficou interessado? Preencha os campos abaixo apra receber uma
+              cotação
+            </p>
+          </div>
+
+          <div class="col-md-7 col-sm-12">
+            <form class="form">
+              <div class="mb-3">
+                <label for="nome" class="form-label mb-0">Nome:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nome"
+                  id="nome"
+                  aria-describedby="helpId"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label mb-0">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Digite seu email"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label for="" class="form-label mb-0">
+                  Descreva rapidamente seu projeto
+                </label>
+                <textarea
+                  class="form-control"
+                  name=""
+                  id=""
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-lg btn-success mt-3">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal-1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6>Confira Tamanho e preços</h6>
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Modal 1 -->
+
+    <footer>foter aqui</footer>
+
+    <script src="./bootstrap520/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
