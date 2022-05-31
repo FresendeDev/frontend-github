@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 - Bootstrap - Testes</title>
+    <link rel="stylesheet" href="./bootstrap520/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="container border-start border-end p-4">
+    <section class="border-bottom border-info pb-4">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h1 class="mb-0 text-info">LOGO</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link active ps-2 rounded-2" href="#">Home</a>
+                <a class="nav-link ps-2 rounded-2" href="#sobre">Sobre</a>
+                <a class="nav-link ps-2 rounded-2" href="#produtos">Produtos</a>
+                <a class="nav-link ps-2 rounded-2" href="#contato">Contato</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <section id="sobre" class="mt-7">
+      <div class="container">
+        <div class="row">
+          <h1 class="mb-4 display-3">Sobre nós</h1>
+
+          <div class="flex-column col-md-7 col-sm-12">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
+              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
+              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
+              commodi sapiente tempore! Iste.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
+              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
+              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
+              commodi sapiente tempore! Iste.
+            </p>
+          </div>
+          <div class="col-md-5 col-sm-12 d-none d-md-block">
+            <img
+              class="img-fluid rounded"
+              src="./img/pexels-energepiccom-159888.jpg"
+              alt="Análise Grpafica"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="mt-7">
+      <div class="container">
+        <h1 class="mb-4 display-3">Produtos</h1>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12 mb-5 mb-md-0">
+            <div class="card shadow">
+              <img
+                src="./img/produto-1.jpg"
+                alt="Análise Tecnica"
+                class="p-3 rounded45"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Produto 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-1"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 mb-5 mb-md-0">
+            <div class="card shadow">
+              <img
+                src="./img/produto-2.jpg"
+                alt="Análise Tecnica"
+                class="p-3 rounded45"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Produto 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-2"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <div class="card shadow">
+              <img
+                src="./img/produto-3.jpg"
+                alt="Análise Tecnica"
+                class="p-3 rounded45"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Produto 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Maxime, quo veritatis vero quis reprehenderit ducimus
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-3"
+                >
+                  Ver detalhes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mt-7 py-4 px-2 bg-light rounded bg-opacity-50">
+      <div class="container">
+        <h1 class="mb-4 display-3">Contato</h1>
+        <div class="row justify-content-between">
+          <div class="col-md-4 col-sm-12">
+            <p>
+              Ficou interessado? Preencha os campos abaixo para receber uma
+              cotação Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Libero praesentium ea odio laborum deserunt similique ex veniam,
+              non hic velit vel fuga iure nulla.
+            </p>
+          </div>
+
+          <div class="col-md-7 col-sm-12 mt-sm-2>
+          <form class="form">
+            <div class="mb-3">
+              <label for="nome" class="form-label mb-0">Nome:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nome"
+                id="nome"
+                aria-describedby="helpId"
+                placeholder="Digite seu nome"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label mb-0">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+              />
+            </div>
+
+            <div class="mb-6">
+              <label for="" class="form-label mb-0">
+                Descreva rapidamente seu projeto
+              </label>
+              <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-lg btn-success mt-3">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal-1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-light table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Modalidade</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Mentoria</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>30 Dias</td>
+                  <td>$ 500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>120 Dias</td>
+                  <td>$ 1200,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>60 Dias</td>
+                  <td>$ 1500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>120 Dias</td>
+                  <td>$ 2500,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Modal 1 -->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal-2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-light table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Modalidade</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Mentoria</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>30 Dias</td>
+                  <td>$ 500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>120 Dias</td>
+                  <td>$ 1200,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>60 Dias</td>
+                  <td>$ 1500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>120 Dias</td>
+                  <td>$ 2500,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Modal 2 -->
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal-3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto 3</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-light table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Modalidade</th>
+                  <th scope="col">Produto</th>
+                  <th scope="col">Mentoria</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>30 Dias</td>
+                  <td>$ 500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Day Trade</th>
+                  <td>IT5</td>
+                  <td>120 Dias</td>
+                  <td>$ 1200,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>60 Dias</td>
+                  <td>$ 1500,00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trader Full</th>
+                  <td>IT</td>
+                  <td>120 Dias</td>
+                  <td>$ 2500,00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Modal 3 -->
+
+    <footer>
+      <div class="container pt-5 pb-4 mt-7 border-top border-info">
+        <div class="row">
+          <div class="col">
+            <p class="m-0">©Todos os direitos reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap520/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
