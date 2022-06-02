@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>15 - Bootstrap - Testes</title>
+    <title>16 - Bootstrap - Cadastro</title>
     <link rel="stylesheet" href="./bootstrap520/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -51,174 +51,141 @@
       </header>
     </section>
 
-    <section id="sobre" class="mt-7">
+    <section
+      id="contato"
+      class="container mt-7 py-4 px-2 bg-light rounded bg-opacity-50"
+    >
       <div class="container">
         <div class="row">
-          <h1 class="mb-4 display-3">Sobre nós</h1>
-
-          <div class="flex-column col-md-7 col-sm-12">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
-              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
-              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
-              commodi sapiente tempore! Iste.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe
-              magnam suscipit. Quisquam, facilis, nulla beatae accusamus, veniam
-              aliquam doloremque doloribus vitae ipsam rem exercitationem modi
-              commodi sapiente tempore! Iste.
-            </p>
-          </div>
-          <div class="col-md-5 col-sm-12 d-none d-md-block">
-            <img
-              class="img-fluid rounded"
-              src="./img/pexels-energepiccom-159888.jpg"
-              alt="Análise Grpafica"
-            />
+          <div class="col-sm-12 mb-4">
+            <h1 class="display-3">Cadastro</h1>
+            <p>Faça seu cadastro e receba na sua casa.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="produtos" class="mt-7">
-      <div class="container">
-        <h1 class="mb-4 display-3">Produtos</h1>
-
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mb-5 mb-md-0">
-            <div class="card shadow">
-              <img
-                src="./img/produto-1.jpg"
-                alt="Análise Tecnica"
-                class="p-3 rounded45"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Produto 1</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Maxime, quo veritatis vero quis reprehenderit ducimus
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal-1"
-                >
-                  Ver detalhes
-                </button>
+        <div class="containder">
+          <form>
+            <!-- nome -->
+            <div class="row mb-3">
+              <div class="col-sm-6">
+                <label for="nome" class="form-label">Nome:</label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  class="form-control"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+              <!-- email -->
+              <div class="col-sm-6">
+                <label for="email" class="form-label">E-mail:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Digite seu e-amil"
+                  required
+                />
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 mb-5 mb-md-0">
-            <div class="card shadow">
-              <img
-                src="./img/produto-2.jpg"
-                alt="Análise Tecnica"
-                class="p-3 rounded45"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Produto 2</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Maxime, quo veritatis vero quis reprehenderit ducimus
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal-2"
-                >
-                  Ver detalhes
-                </button>
+            <!-- fim email -->
+            <!-- endereco -->
+            <div class="row mb-3">
+              <div class="col">
+                <label for="end" class="form-label"> Endereço completo </label>
+                <input
+                  type="text"
+                  name="end"
+                  id="end"
+                  class="form-control"
+                  placeholder="Ex: Rua Dois, 555/401"
+                />
               </div>
             </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4">
-            <div class="card shadow">
-              <img
-                src="./img/produto-3.jpg"
-                alt="Análise Tecnica"
-                class="p-3 rounded45"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Produto 3</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Maxime, quo veritatis vero quis reprehenderit ducimus
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modal-3"
-                >
-                  Ver detalhes
-                </button>
+            <!-- cidade -->
+            <div class="row mb-3">
+              <div class="col-sm-5 mb-3 mb-sm-0">
+                <label for="cidade" class="form-label"> Cidade </label>
+                <input
+                  type="text"
+                  name="cidade"
+                  id="cidade"
+                  class="form-control"
+                  placeholder="Digite sua cidade"
+                />
+              </div>
+              <!-- estadp -->
+              <div class="col-sm-2 mb-3 mb-sm-0">
+                <label for="uf" class="form-label"> UF </label>
+                <select name="uf" id="uf" class="form-control">
+                  <option value="">Escolha</option>
+                  <option value="mg">MG</option>
+                  <option value="sp">SP</option>
+                  <option value="rj">RJ</option>
+                </select>
+              </div>
+              <!-- cep -->
+              <div class="col-sm-5 mb-3 mb-sm-0">
+                <label for="cep " class="form-label"> CEP </label>
+                <input
+                  type="text"
+                  name="cep"
+                  id="cep"
+                  class="form-control"
+                  placeholder="Digite seu cep"
+                />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="contato" class="mt-7 py-4 px-2 bg-light rounded bg-opacity-50">
-      <div class="container">
-        <h1 class="mb-4 display-3">Contato</h1>
-        <div class="row justify-content-between">
-          <div class="col-md-4 col-sm-12">
-            <p>
-              Ficou interessado? Preencha os campos abaixo para receber uma
-              cotação Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Libero praesentium ea odio laborum deserunt similique ex veniam,
-              non hic velit vel fuga iure nulla.
-            </p>
-          </div>
-
-          <div class="col-md-7 col-sm-12 mt-sm-2>
-          <form class="form">
-            <div class="mb-3">
-              <label for="nome" class="form-label mb-0">Nome:</label>
-              <input
-                type="text"
-                class="form-control"
-                name="nome"
-                id="nome"
-                aria-describedby="helpId"
-                placeholder="Digite seu nome"
-              />
+            <!-- fim -->
+            <!-- informacoes -->
+            <div class="row mb-3">
+              <div class="col">
+                <label for="info" class="form-label">Informações</label>
+                <textarea
+                  name="info"
+                  id="info"
+                  rows="5"
+                  class="form-control"
+                ></textarea>
+              </div>
             </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label mb-0">Email:</label>
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Digite seu email"
-              />
+            <!-- fimi informacao -->
+            <!-- aceito -->
+            <div class="row mb-3">
+              <div class="col">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="aceito"
+                    id="aceito"
+                    class="form-check-input"
+                    checked
+                  />
+                  <label for="aceito" class="form-check-label">
+                    Aceito receber informações promocionais
+                  </label>
+                </div>
+              </div>
             </div>
-
-            <div class="mb-6">
-              <label for="" class="form-label mb-0">
-                Descreva rapidamente seu projeto
-              </label>
-              <textarea class="form-control" name="" id="" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-lg btn-success mt-3">
-              Enviar
-            </button>
+            <!-- fim aceito -->
+            <!-- botao -->
+            <button class="btn btn-primary mt-4">Cadastrar</button>
           </form>
+          <p class="mt-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cad">
+              Cadaste-se</a
+            >
+            para receber novidades
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Modal 1 -->
-    <div class="modal fade" id="modal-1" tabindex="-1">
+    <div class="modal fade" id="modal-cad" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -231,42 +198,37 @@
             ></button>
           </div>
           <div class="modal-body">
-            <table class="table table-light table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Modalidade</th>
-                  <th scope="col">Produto</th>
-                  <th scope="col">Mentoria</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>30 Dias</td>
-                  <td>$ 500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>120 Dias</td>
-                  <td>$ 1200,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>60 Dias</td>
-                  <td>$ 1500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>120 Dias</td>
-                  <td>$ 2500,00</td>
-                </tr>
-              </tbody>
-            </table>
+            
+            <div class="container">
+              <p>Preencha os campos para receber novidades e promoções</p>
+              <div class="row">
+                <div class="col-auto">
+                  <form class="form-inline mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="nome"
+                      id="nome"
+                      placeholder="Nome"
+                    />
+                </div>
+                <div class="col-auto">
+                  <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+
+                </div>
+              </div>
+              <button class="btn btn-primary">Receber novidades</button>
+            </div>
+  
+            </form>
+
           </div>
           <div class="modal-footer">
             <button
@@ -274,141 +236,13 @@
               class="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Close
+              Fechar
             </button>
           </div>
         </div>
       </div>
     </div>
     <!-- end Modal 1 -->
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal-2" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Produto 2</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <table class="table table-light table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Modalidade</th>
-                  <th scope="col">Produto</th>
-                  <th scope="col">Mentoria</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>30 Dias</td>
-                  <td>$ 500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>120 Dias</td>
-                  <td>$ 1200,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>60 Dias</td>
-                  <td>$ 1500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>120 Dias</td>
-                  <td>$ 2500,00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end Modal 2 -->
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal-3" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Produto 3</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <table class="table table-light table-striped table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Modalidade</th>
-                  <th scope="col">Produto</th>
-                  <th scope="col">Mentoria</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>30 Dias</td>
-                  <td>$ 500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Day Trade</th>
-                  <td>IT5</td>
-                  <td>120 Dias</td>
-                  <td>$ 1200,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>60 Dias</td>
-                  <td>$ 1500,00</td>
-                </tr>
-                <tr>
-                  <th scope="row">Trader Full</th>
-                  <td>IT</td>
-                  <td>120 Dias</td>
-                  <td>$ 2500,00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end Modal 3 -->
 
     <footer>
       <div class="container pt-5 pb-4 mt-7 border-top border-info">
