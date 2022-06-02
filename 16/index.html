@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>15 - Bootstrap - Testes</title>
+    <title>16 - Bootstrap</title>
     <link rel="stylesheet" href="./bootstrap520/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -17,7 +17,7 @@
               <h1 class="mb-0 text-info">LOGO</h1>
             </a>
             <button
-               class="navbar-toggler"
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -44,11 +44,100 @@
                 <a class="nav-link ps-2 rounded-2" href="index.html#contato"
                   >Contato</a
                 >
+                <a class="nav-link ps-2 rounded-2" href="cadastro.html"
+                  >Cadastro</a
+                >
               </div>
             </div>
           </div>
         </nav>
       </header>
+    </section>
+
+    <!-- carrocel -->
+    <section class="carrocel mt-4">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img
+              src="./img/carrocel-2.jpg"
+              class="d-block w-100 corte-img rounded"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1 class="display-3">Resultado</h1>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="4000">
+            <img
+              src="./img/carrocel-1.jpg"
+              class="d-block w-100 corte-img rounded"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1 class="display-3">Compromisso</h1>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="4000">
+            <img
+              src="./img/carrocel-3.jpg"
+              class="d-block w-100 corte-img rounded"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <h1 class="display-3">Confiança</h1>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section id="sobre" class="mt-7">

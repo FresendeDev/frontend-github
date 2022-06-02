@@ -1,3 +1,7 @@
+html {
+    min-width: 300px;
+}
+
 .mt-7 {
     margin-top: 5rem;
 }
@@ -6,12 +10,22 @@
     border-radius: 1.5rem;
 }
 
-
-html {
-    min-width: 300px;
-}
-
 .nav-link:hover {
     background-color: #49cbf0;
     color: white;
+}
+
+.corte-img {
+
+    height: 15rem;
+    object-fit: cover;
+    object-position: 0px 0px;
+    filter: brightness(0.5);
+}
+
+@media (min-width: 768px) {
+
+    .corte-img {
+        height: 25rem;
+    }
 }
