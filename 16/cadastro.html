@@ -68,8 +68,8 @@
         <div class="containder">
           <form>
             <!-- nome -->
-            <div class="row mb-3">
-              <div class="col-sm-6">
+            <div class="row mb-sm-3">
+              <div class="col-sm-5 mb-3 mb-sm-0">
                 <label for="nome" class="form-label">Nome:</label>
                 <input
                   type="text"
@@ -81,7 +81,7 @@
                 />
               </div>
               <!-- email -->
-              <div class="col-sm-6">
+              <div class="col-sm-4 mb-3 mb-sm-0">
                 <label for="email" class="form-label">E-mail:</label>
                 <input
                   type="email"
@@ -92,24 +92,49 @@
                   required
                 />
               </div>
+              <!-- telefone -->
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input
+                  type="number"
+                  name="telefone"
+                  id="telefone"
+                  class="form-control"
+                  placeholder="Telefone"
+                  required
+                />
+              </div>
             </div>
             <!-- fim email -->
             <!-- endereco -->
-            <div class="row mb-3">
-              <div class="col">
+            <div class="row mb-sm-3">
+              <div class="col-sm-9 mb-3 mb-sm-0">
                 <label for="end" class="form-label"> Endereço completo </label>
                 <input
                   type="text"
                   name="end"
                   id="end"
                   class="form-control"
-                  placeholder="Ex: Rua Dois, 555/401"
+                  placeholder="Ex: Rua Dois, 555"
+                  required
+                />
+              </div>
+              <!-- complemento -->
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                <label for="comp" class="form-label"> Complemento </label>
+                <input
+                  type="text"
+                  name="comp"
+                  id="comp"
+                  class="form-control"
+                  placeholder="Complemento"
+                  required
                 />
               </div>
             </div>
             <!-- cidade -->
             <div class="row mb-3">
-              <div class="col-sm-5 mb-3 mb-sm-0">
+              <div class="col-sm-3 mb-3 mb-sm-0">
                 <label for="cidade" class="form-label"> Cidade </label>
                 <input
                   type="text"
@@ -117,32 +142,46 @@
                   id="cidade"
                   class="form-control"
                   placeholder="Digite sua cidade"
+                  required
                 />
               </div>
               <!-- estadp -->
               <div class="col-sm-2 mb-3 mb-sm-0">
                 <label for="uf" class="form-label"> UF </label>
-                <select name="uf" id="uf" class="form-control">
+                <select name="uf" id="uf" class="form-control" required>
                   <option value="">Escolha</option>
                   <option value="mg">MG</option>
                   <option value="sp">SP</option>
                   <option value="rj">RJ</option>
                 </select>
               </div>
+              <!-- bairro -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <label for="bairro" class="form-label"> Bairro </label>
+                <input
+                  type="text"
+                  name="bairro"
+                  id="bairro"
+                  class="form-control"
+                  placeholder="Digite seu bairro"
+                  required
+                />
+              </div>
               <!-- cep -->
-              <div class="col-sm-5 mb-3 mb-sm-0">
-                <label for="cep " class="form-label"> CEP </label>
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                <label for="cep" class="form-label"> CEP </label>
                 <input
                   type="text"
                   name="cep"
                   id="cep"
                   class="form-control"
                   placeholder="Digite seu cep"
+                  required
                 />
               </div>
             </div>
 
-            <!-- fim -->
+            
             <!-- informacoes -->
             <div class="row mb-3">
               <div class="col">
@@ -152,6 +191,7 @@
                   id="info"
                   rows="5"
                   class="form-control"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -166,6 +206,7 @@
                     id="aceito"
                     class="form-check-input"
                     checked
+                    
                   />
                   <label for="aceito" class="form-check-label">
                     Aceito receber informações promocionais
@@ -177,7 +218,7 @@
             <!-- botao -->
             <button class="btn btn-primary mt-4">Cadastrar</button>
           </form>
-          <p class="mt-4">
+          <p class="mt-2">
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal-cad">
               Cadaste-se</a
             >
