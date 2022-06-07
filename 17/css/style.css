@@ -3,22 +3,22 @@ body {
 	transition: all 0.5s;
 }
 
-p {
+/* p {
 	margin-bottom: 0px;
 	font-size: 14px;
 	color: #4a4a4a;
 	line-height: 24px;
-}
+} */
 
-a {
+/* a {
 	text-decoration: none !important;
-}
-
+} */
+/* 
 .copyright-text {
 	text-transform: uppercase;
-}
+} */
 
-.main-button a {
+/* .main-button a {
 	background-color: #3a8bcd;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -30,9 +30,9 @@ a {
 	letter-spacing: 0.4px;
 	text-decoration: none;
 	transition: all 0.5s;
-}
+} */
 
-.main-button a:hover {
+/* .main-button a:hover {
 	opacity: 0.7;
 }
 
@@ -52,10 +52,10 @@ a {
 	font-weight: 700;
 	color: #1e1e1e;
 	margin-top: 15px;
-}
+} */
 
 /* Pre Header Style */
-#pre-header {
+/* #pre-header {
 	background-color: #3a8bcd;
 	text-align: center;
 }
@@ -65,7 +65,7 @@ a {
 	font-size: 15px;
 	padding: 10px 0px;
 	display: inline-block;
-}
+} */
 
 /* Header Style */
 /* .navbar .navbar-brand {
@@ -75,10 +75,10 @@ a {
 	padding: 25px 0px;
 } */
 
-.bg-dark {
+/* .bg-dark {
 	background-color: #fff !important;
 	border-bottom: 1px solid #eee;
-}
+} */
 
 /* #navbarResponsive {
 	z-index: 999;
@@ -138,17 +138,17 @@ a {
 	background-color: #3a8bcd;
 } */
 
-.icone-sand {
+/* .icone-sand {
 	content: '\f0c9';
 	color: #FFF;
 	font-size: 22px;
 	line-height: 30px;
 	font-family: 'FontAwesome';
-}
+} */
 
 /* Banner Style */
 .banner {
-	margin-top: 50px;
+
 	background-image: url(../assets/images/banner-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -157,7 +157,7 @@ a {
 }
 
 .banner .caption {
-	background-color: rgba(250, 250, 250, 0.9);
+	background-color: rgba(250, 250, 250, 0.78);
 	padding: 30px;
 	max-width: 450px;
 }
@@ -777,6 +777,29 @@ a {
 	border: none;
 }
 
+.img-w {
+
+	min-width: 160px !important;
+	max-width: 240px !important;
+}
+
+.mw {
+	min-width: 320px;
+}
+
+.navbar-nav>.nav-item a {
+	border-radius: 0.375rem;
+}
+
+.navbar-nav>.nav-item a:hover {
+	background-color: #5371ff;
+	color: white;
+
+}
+
+
+
+
 /* Responsive Style */
 @media (max-width: 991px) {
 
@@ -846,6 +869,7 @@ a {
 	}
 
 }
+
 
 @media (max-width: 767px) {
 
