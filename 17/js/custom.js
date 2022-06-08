@@ -38,6 +38,7 @@
 // ******************  PROFESSOR
 // instancia jquery e evita conflitos
 // jQuery( function($){
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 
@@ -83,4 +84,25 @@ $(document).ready(function () {
 
     alert("Produto esgotado");
   });
+});
+
+$(".owl-carousel").owlCarousel({
+  stagePadding: 50,
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 2,
+      nav: false,
+    },
+    1000: {
+      items: 3,
+      nav: true,
+    },
+  },
 });
