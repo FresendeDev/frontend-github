@@ -40,11 +40,30 @@
 // jQuery( function($){
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel();
+  $(".owl-carousel").owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+      },
+    },
+  });
 
   let titulos = $("h4"); // tag
 
-  let itens = $(".featured-item"); // class
+  let itens = $(".featured-items"); // class
 
   let destaques = $("#featured"); // id
 
@@ -81,10 +100,27 @@ $(document).ready(function () {
    */
   $(".featured-item a").on("blur", function (event) {
     event.preventDefault();
-
     alert("Produto esgotado");
   });
+
+  /*
+   * Ouvinte de eventos .nav-modal-open
+   */
+  $(".nav-modal-open").on("click", function (e) {
+    e.preventDefault();
+
+    let elem = $(this).attr("rel");
+
+    $(".modal-body").html($("#" + elem).html());
+
+    $(".modal-header h5.modal-title").html($(this).text());
+  });
 });
+
+/**
+ * 
+ * 
+
 
 $(".owl-carousel").owlCarousel({
   stagePadding: 50,
@@ -107,7 +143,9 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+
 // callback
+
 $(document).ready(function () {
   $(".featured-item:nth(5)")
     .hide(1000, function () {
@@ -127,3 +165,4 @@ $(document).ready(function () {
     .toggle(duracao)
     .toggle(duracao);
 });
+*/
