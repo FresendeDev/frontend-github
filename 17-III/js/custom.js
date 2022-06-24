@@ -112,8 +112,49 @@ $(document).ready(function () {
     let elem = $(this).attr("rel");
 
     $(".modal-body").html($("#" + elem).html());
+    $(".modal-title").html($(this).text());
+  });
 
-    $(".modal-header h5.modal-title").html($(this).text());
+  /*
+   * Ouvinte de eventos submit
+   */
+
+  $("#form-submit").on("click", function (e) {
+    e.preventDefault();
+
+    if ($("#email").val() != "") {
+      $("#email").animate(
+        {
+          opacity: "toggle",
+          top: "-50",
+        },
+        500,
+        function () {
+          console.log($(this).val());
+        }
+      );
+    }
+  });
+
+  /*
+   * Ouvinte de eventos submit modal
+   */
+
+  $("body").on("submit", ".modal-body .form", function (e) {
+    e.preventDefault();
+
+    const inputName = $("#nome");
+    const inputEmail = $("#email");
+
+    validate(inputName);
+    validate(inputEmail);
+
+    if (inputEmail.hasClass("invalid") || inputName.hasClass("invalid")) {
+      console.log("verificar campos obrigatórios");
+      return false;
+    } else {
+      $(this).submit();
+    }
   });
 });
 
