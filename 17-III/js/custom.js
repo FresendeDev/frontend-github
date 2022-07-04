@@ -112,39 +112,33 @@ $(document).ready(function () {
     let elem = $(this).attr("rel");
 
     $(".modal-body").html($("#" + elem).html());
-
-    $(".modal-header h5.modal-title").html($(this).text());
-
-    let myModal = new bootstrap.Modal($("#modelId"));
-
-    myModal.show();
+    $(".modal-title").html($(this).text());
   });
 
   /*
    * Ouvinte de eventos submit
-  
    */
+
+  $("#form-submit").on("click", function (e) {
+    e.preventDefault();
+
+    if ($("#email").val() != "") {
+      $("#email").animate(
+        {
+          opacity: "toggle",
+          top: "-50",
+        },
+        500,
+        function () {
+          console.log($(this).val());
+        }
+      );
+    }
+  });
 
   /*
-   * TODO: incrementar a validação
-   * - checar se o nome é válido (mais de 2 caracteres)
-   * - checar se o email é válido com ao menos um "@" e "."
-   * - checar se o cpf é válido com regex
+   * Ouvinte de eventos submit modal
    */
-  function validate(elem) {
-    if (elem.val() == "") {
-      console.log("o campo de " + elem.attr("name") + " é obrigatório");
-
-      elem.parent().find(".text-muted").show();
-
-      elem.addClass("invalid");
-
-      return false;
-    } else {
-      elem.parent().find(".text-muted").hide();
-      elem.removeClass("invalid");
-    }
-  }
 
   $("body").on("submit", ".modal-body .form", function (e) {
     e.preventDefault();
@@ -162,41 +156,48 @@ $(document).ready(function () {
       $(this).submit();
     }
   });
-
-  $("body").on("blur", "#nome", function () {
-    validate($(this));
-  });
-
-  $("body").on("blur", "#email", function () {
-    validate($(this));
-  });
-
-  $("body").on("focus", "#date", function () {
-    $(this).datepicker();
-  });
-
-  $("body").on("blur", "#date", function () {
-    validate($(this));
-    $(this).mask("00/00/0000");
-  });
-
-  $("body").on("blur", "#time", function () {
-    validate($(this));
-    $(this).mask("00:00");
-  });
-
-  $("body").on("blur", "#cep", function () {
-    validate($(this));
-    $(this).mask("00000-000");
-  });
-
-  $("body").on("blur", "#phone", function () {
-    validate($(this));
-    $(this).mask("00000-0000");
-  });
-
-  $("body").on("blur", "#cpf", function () {
-    validate($(this));
-    $(this).mask("000.000.000-00");
-  });
 });
+
+/**
+   * 
+   * 
+  $(".owl-carousel").owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+      },
+    },
+  });
+  // callback
+  $(document).ready(function () {
+    $(".featured-item:nth(5)")
+      .hide(1000, function () {
+        console.log($(this).find("h4").text() + " esgotado");
+      })
+      .show(1000, function () {
+        console.log($(this).find("h4").text() + " em estoque");
+      });
+    // animacoes
+    const duracao = 1000;
+    $(".featured-item:nth(6)")
+      .hide(duracao)
+      .show(duracao)
+      .fadeOut(duracao)
+      .fadeIn(duracao)
+      .toggle(duracao)
+      .toggle(duracao);
+  });
+  */
