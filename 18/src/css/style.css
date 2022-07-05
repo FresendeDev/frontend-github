@@ -127,9 +127,9 @@ body {
 	background-color: #3a8bcd;
 	height: 50px;
 	outline: none;
-}
+} */
 
-.navbar-toggler-icon::after {
+/* .navbar-toggler-icon::after {
 	content: '\f0c9';
 	color: #FFF;
 	font-size: 22px;
@@ -371,6 +371,7 @@ body {
 	margin: 0px 10px;
 }
 
+/* fontaw */
 .footer .social-icons a {
 	width: 32px;
 	height: 32px;
