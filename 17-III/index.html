@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./vendor/owl/css/owl.css" />
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>jQuery</title>
@@ -157,6 +158,7 @@
         </div>
       </div>
     </div>
+
     <div class="subscribe-form">
       <div class="container">
         <div class="row">
@@ -202,6 +204,7 @@
         </div>
       </div>
     </div>
+
     <div class="footer">
       <div class="container">
         <div class="row">
@@ -273,7 +276,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body"></div>
           <div class="modal-footer">
             <button
               type="button"
@@ -287,6 +290,7 @@
         </div>
       </div>
     </div>
+
     <!-- form contato -->
     <div id="contato" class="visually-hidden">
       <form action="post">
@@ -299,9 +303,13 @@
             class="form-control"
             placeholder="Digite seu Nome"
             aria-describedby="helpNome"
+            required
           />
-          <small id="helpNome" class="text-muted">Digite um nome valido </small>
+          <small id="helpNome" class="text-muted">
+            Digite um nome válido
+          </small>
         </div>
+
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input
@@ -311,10 +319,91 @@
             class="form-control"
             placeholder="Digite seu eemail"
             aria-describedby="helpemail"
+            required
           />
           <small id="helpemail" class="text-muted">
             Digite um email valido</small
           >
+        </div>
+
+        <div class="mb-3">
+          <label for="date" class="form-label">Data</label>
+          <input
+            type="text"
+            name="date"
+            id="date"
+            class="form-control"
+            placeholder="Digite seu e-mail"
+            aria-describedby="helpDate"
+            required
+          />
+          <small id="helpDate" class="text-muted">
+            Digite uma data válida
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="time" class="form-label">Hora</label>
+          <input
+            type="text"
+            name="time"
+            id="time"
+            class="form-control"
+            placeholder="Digite a hora"
+            aria-describedby="helpHora"
+            required
+          />
+          <small id="helpHora" class="text-muted">
+            Digite um tempo válido
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="cep" class="form-label">CEP</label>
+          <input
+            type="text"
+            name="cep"
+            id="cep"
+            class="form-control"
+            placeholder="Digite seu cep"
+            aria-describedby="helpCEP"
+            required
+          />
+          <small id="helpCEP" class="text-muted">
+            Digite um tempo válido
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Celular</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            class="form-control"
+            placeholder="Digite seu phone"
+            aria-describedby="helpCelular"
+            required
+          />
+          <small id="helpCelular" class="text-muted">
+            Digite um celular válido
+          </small>
+        </div>
+
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            class="form-control"
+            aria-describedby="helpCPF"
+            placeholder="Digite seu cpf"
+            required
+          />
+          <small id="helpCPF" class="text-muted">
+            Digite um celular válido
+          </small>
         </div>
 
         <button type="submit" class="btn btn-success">Enviar</button>
@@ -333,6 +422,9 @@
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+
     <script src="./js/custom.js"></script>
   </body>
 </html>

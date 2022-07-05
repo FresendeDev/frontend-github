@@ -87,6 +87,23 @@ $(document).ready(function () {
   // $('.featured-item:first h4').fadeOut()
   //  $('.featured-item:first h4').css('color', '#f00')
 
+  $("#form-submit").on("click", function (e) {
+    e.preventDefault();
+
+    if ($("#email").val() != "") {
+      $("#email").animate(
+        {
+          opacity: "toggle",
+          top: "-50",
+        },
+        500,
+        function () {
+          console.log($(this).val());
+        }
+      );
+    }
+  });
+
   $(".featured-item h4").dblclick(function () {
     $(this).css({
       color: "#f00",
@@ -119,26 +136,28 @@ $(document).ready(function () {
    * Ouvinte de eventos submit
    */
 
-  $("#form-submit").on("click", function (e) {
-    e.preventDefault();
+  // adicioneu esse bloco
 
-    if ($("#email").val() != "") {
-      $("#email").animate(
-        {
-          opacity: "toggle",
-          top: "-50",
-        },
-        500,
-        function () {
-          console.log($(this).val());
-        }
-      );
-    }
-  });
+  // add
 
   /*
    * Ouvinte de eventos submit modal
    */
+
+  function validate(elem) {
+    if (elem.val() == "") {
+      console.log("o campo de " + elem.attr("name") + " é obrigatório");
+
+      elem.parent().find(".text-muted").show();
+
+      elem.addClass("invalid");
+
+      return false;
+    } else {
+      elem.parent().find(".text-muted").hide();
+      elem.removeClass("invalid");
+    }
+  }
 
   $("body").on("submit", ".modal-body .form", function (e) {
     e.preventDefault();
@@ -156,48 +175,93 @@ $(document).ready(function () {
       $(this).submit();
     }
   });
-});
 
-/**
-   * 
-   * 
-  $(".owl-carousel").owlCarousel({
-    stagePadding: 50,
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 2,
-        nav: false,
-      },
-      1000: {
-        items: 3,
-        nav: true,
-      },
-    },
+  $("body").on("blur", "#nome", function () {
+    validate($(this));
   });
-  // callback
-  $(document).ready(function () {
-    $(".featured-item:nth(5)")
-      .hide(1000, function () {
-        console.log($(this).find("h4").text() + " esgotado");
-      })
-      .show(1000, function () {
-        console.log($(this).find("h4").text() + " em estoque");
-      });
-    // animacoes
-    const duracao = 1000;
-    $(".featured-item:nth(6)")
-      .hide(duracao)
-      .show(duracao)
-      .fadeOut(duracao)
-      .fadeIn(duracao)
-      .toggle(duracao)
-      .toggle(duracao);
+
+  $("body").on("blur", "#email", function () {
+    validate($(this));
   });
-  */
+
+  $("body").on("focus", "#date", function () {
+    $(this).datepicker();
+  });
+
+  $("body").on("blur", "#date", function () {
+    validate($(this));
+    $(this).mask("00/00/0000");
+  });
+
+  $("body").on("blur", "#time", function () {
+    validate($(this));
+    $(this).mask("00:00");
+  });
+
+  $("body").on("blur", "#cep", function () {
+    validate($(this));
+    $(this).mask("00000-000");
+  });
+
+  $("body").on("blur", "#phone", function () {
+    validate($(this));
+    $(this).mask("00000-0000");
+  });
+
+  $("body").on("blur", "#cpf", function () {
+    // valid cpf
+
+    let value_cpf = document.querySelector("#cpf");
+    console.log(value_cpf);
+
+    value_cpf.addEventListener("keydown", function (e) {
+      if (e.key > "a" && e.key < "z") {
+        e.preventDefault();
+      }
+    });
+    value_cpf.addEventListener("blur", function (e) {
+      //Remove tudo o que não é dígito
+      let validar_cpf = this.value.replace(/\D/g, "");
+
+      //verificação da quantidade números
+      if (validar_cpf.length == 11) {
+        // verificação de CPF valido
+        var Soma;
+        var Resto;
+
+        Soma = 0;
+        for (i = 1; i <= 9; i++)
+          Soma = Soma + parseInt(validar_cpf.substring(i - 1, i)) * (11 - i);
+        Resto = (Soma * 10) % 11;
+
+        if (Resto == 10 || Resto == 11) Resto = 0;
+        if (Resto != parseInt(validar_cpf.substring(9, 10)))
+          return console.log("cpf invalido-1"), $("#cpf").addClass("invalid");
+        // alert("CPF Inválido!");
+
+        Soma = 0;
+        for (i = 1; i <= 10; i++)
+          Soma = Soma + parseInt(validar_cpf.substring(i - 1, i)) * (12 - i);
+        Resto = (Soma * 10) % 11;
+
+        if (Resto == 10 || Resto == 11) Resto = 0;
+        if (Resto != parseInt(validar_cpf.substring(10, 11)))
+          return console.log("cpf invalido-2"), $("#cpf").addClass("invalid");
+        // alert("CPF Inválido!");
+
+        //formatação final
+        cpf_final = validar_cpf.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf_final = cpf_final.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf_final = cpf_final.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+        (document.getElementById("cpf").value = cpf_final),
+          $("#cpf").removeClass("invalid");
+      } else {
+        // alert("CPF Inválido! É esperado 11 dígitos numéricos.");
+        console.log("Necessário 11 digitos");
+        $("#cpf").addClass("invalid");
+      }
+    });
+
+    // end cpf
+  });
+});
