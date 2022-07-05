@@ -3,6 +3,7 @@ const concat = require("gulp-concat");
 const cssmin = require("gulp-cssmin");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
+const image = require("gulp-image");
 
 function tarefasCSS(cb) {
   // origem arquivo
@@ -41,6 +42,26 @@ function tarefasJS() {
     .pipe(gulp.dest("./dist/js")); //      cria arquivo em novo diretório
 }
 
+function tarefasImagem() {
+  return gulp
+    .src("./src/images/*")
+    .pipe(
+      image({
+        pngquant: true,
+        optipng: true, // mudei para true
+        zopflipng: true,
+        jpegRecompress: true, // mudei para true
+        mozjpeg: true,
+        gifsicle: true,
+        svgo: true,
+        concurrent: 10,
+        quiet: true,
+      })
+    )
+    .pipe(gulp.dest("./dist/images"));
+}
+
 // para o node compreender a funcao necessario exprtar
 exports.styles = tarefasCSS;
 exports.scripts = tarefasJS;
+exports.images = tarefasImagem;
