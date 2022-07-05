@@ -149,7 +149,7 @@ body {
 /* Banner Style */
 .banner {
 
-	background-image: url(../assets/images/banner-bg.jpg);
+	background-image: url(../images/banner-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 150px 0px;
