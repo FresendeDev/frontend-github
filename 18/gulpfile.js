@@ -4,6 +4,8 @@ const cssmin = require("gulp-cssmin");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const image = require("gulp-image");
+const stripJs = require("gulp-strip-comments");
+const stripCss = require("gulp-strip-css-comments");
 
 function tarefasCSS(cb) {
   // origem arquivo
@@ -17,7 +19,7 @@ function tarefasCSS(cb) {
         "./src/css/style.css",
       ])
       // pipe  metodos de tratamento gulp
-
+      .pipe(stripCss()) // remove comentários
       .pipe(concat("styles.css")) //         mescla arquivos
       .pipe(cssmin()) //                     minifica css
       .pipe(rename({ suffix: ".min" })) //   styles.min.css
@@ -35,7 +37,7 @@ function tarefasJS() {
       "./vendor/jquery-ui/jquery-ui.min.js",
       "./src/js/custom.js",
     ])
-
+    .pipe(stripJs()) // remove comentários
     .pipe(concat("scripts.js")) // mescla arquivos
     .pipe(uglify()) // minifica js
     .pipe(rename({ suffix: ".min" })) // scripts.min.js
