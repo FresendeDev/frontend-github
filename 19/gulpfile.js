@@ -95,7 +95,7 @@ gulp.task("serve", function () {
 // conclusao do modulo
 function end(cb) {
   console.log(
-    "tarefas concluidas, se algum leu essa msg por favor responda que sim"
+    "tarefas concluidas, tudo 100%, muito boa a aula, se algum leu essa msg por favor responda que sim"
   );
   return cb();
 }
