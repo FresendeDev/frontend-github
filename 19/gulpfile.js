@@ -109,5 +109,3 @@ exports.scripts = tarefasJS;
 exports.images = tarefasImagem;
 exports.html = tarefasHTML;
 exports.default = process;
-
-exports.default = process;
