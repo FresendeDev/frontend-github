@@ -126,7 +126,7 @@ function tarefasLIMPAR() {
 }
 
 // servidor
-gulp.task("serve", function () {
+gulp.task("server", function () {
   browserSync.init({
     server: {
       baseDir: "./dist",
