@@ -29,11 +29,12 @@
     list-style-type: none;
     font-size: $font-small;
     height: max-content;
-    margin: $space-default auto;
+    margin: 0 auto;
     padding: 1rem 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
