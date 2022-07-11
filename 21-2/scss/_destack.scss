@@ -1,31 +1,37 @@
 .destack {
   background-color: $color-04;
-  padding: $space-default;
-  border-radius: 1rem;
+  padding: 20px;
+
   &__title {
     color: $color-03;
     float: left;
-    font-size: $font-big;
+    font-size: calc($font-big * 1.5);
     margin-top: 0;
-    padding: 2rem;
-    display: flex;
+    padding: 20px 0;
+    // display: flex;
   }
   &__subtitle {
     float: left;
     font-size: $font-small;
     margin-left: $space-default;
     margin-top: $mt;
-    display: flex;
+    // display: flex;
+    color: $color-05;
   }
   &__image {
     width: 100%;
     height: auto;
     margin: $space-default auto;
+    border-radius: 0 200px 0 0;
   }
   &__description {
-    font-size: $font-normal;
-    color: $color-05;
-    width: 100%;
-    font-weight: 700;
+    p {
+      font-size: $font-medium1;
+      color: $color-05;
+      width: 100%;
+      font-weight: 700;
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
   }
 }

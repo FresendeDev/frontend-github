@@ -1,9 +1,11 @@
 header {
   display: block;
-  margin-bottom: 50px;
+  padding: 40px 20px;
 }
 footer {
   display: block;
+  padding: 40px 20px;
+  background-color: $bg-color;
 }
 
 .header {
@@ -18,20 +20,15 @@ footer {
   }
 
   &__nav {
-    font-size: $font-big;
+    font-size: $font-medium;
   }
 }
 .footer {
-  background-color: $bg-color;
-  padding: 3rem 0;
-  display: block;
-  bottom: 0;
-
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
+  p {
+    font-size: $font-small;
+    margin: 0;
+  }
   &__nav {
-    font-size: $font-big;
+    font-size: $font-medium;
   }
 }

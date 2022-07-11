@@ -20,9 +20,11 @@
      */
 
   padding: 3rem 0;
+  //   margin-bottom: 50px;
 
   &__title {
-    color: $color-01;
+    color: $color-04;
+    padding: 50px 20px 20px;
   }
 
   &__list {
@@ -30,23 +32,29 @@
     font-size: $font-small;
     height: max-content;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 100px;
+
+    @media (min-width: $md) {
+      padding: 0;
+    }
   }
 
   &__item {
     color: $color-02;
     display: block;
-    margin: $space-default 0.75rem;
+    margin: $space-default 0.9rem;
     text-align: center;
-    width: calc(99% - 30px);
+    width: calc(99% / 3 - 15px);
     border-radius: 1rem;
+    box-shadow: 5px 6px 15px 0px rgb(201 201 201);
 
-    @media (min-width: 768px) {
-      width: calc(99% / 3 - 15px);
+    @media (max-width: $md) {
+      width: calc(99% - 30px);
     }
   }
 
@@ -56,7 +64,7 @@
     overflow: hidden;
     width: 100%;
     border-radius: 1rem 1rem 0 0;
-    @media (max-width: $lg) {
+    @media (max-width: $md) {
       height: 20rem;
     }
   }
@@ -67,7 +75,7 @@
     padding: $space-default;
 
     &--destack {
-      color: $color-02;
+      color: $color-05;
     }
   }
 
@@ -81,5 +89,17 @@
     padding: 0.5rem 3rem;
     text-align: center;
     text-decoration: none;
+  }
+  &__text {
+    padding: 0 20px;
+    font-size: 2rem;
+
+    color: white;
+  }
+  h4 {
+    padding: 30px 20px 20px;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
   }
 }

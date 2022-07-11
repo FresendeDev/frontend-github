@@ -27,12 +27,17 @@ section {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 5%;
+
+  &__banner {
+    width: 100%;
+    background-color: $color-04;
+  }
 
   @media (min-width: $md) {
     max-width: $lg;
   }
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +60,7 @@ body {
 }
 
 p {
-  color: $color-01;
+  color: $color-04;
   font-size: $font-normal;
   margin-bottom: $mb;
   text-align: $align;
@@ -76,4 +81,7 @@ h2 {
 h3 {
   color: $color-03;
   font-size: $font-normal;
+}
+a {
+  text-decoration: none;
 }
