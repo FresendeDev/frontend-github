@@ -28,7 +28,7 @@
   &__list {
     list-style-type: none;
     font-size: $font-small;
-    height: auto;
+    height: max-content;
     margin: $space-default auto;
     padding: 1rem 0;
     width: 100%;
@@ -54,7 +54,7 @@
     height: 15rem;
     overflow: hidden;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     @media (max-width: $lg) {
       height: 20rem;
     }

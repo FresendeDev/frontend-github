@@ -16,29 +16,29 @@ p {
 }
 
 article,
-header,
-section,
-footer {
-  color: $color-04;
+section {
+  //   color: $color-04;
   display: block;
-  float: left;
+  //   float: left;
   margin: 0 auto;
   width: 100%;
-  padding: 4rem 0;
-}
-
-section {
-  padding: 0;
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 5%;
-
-  max-width: 95%;
 
   @media (min-width: $md) {
     max-width: $lg;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &__center--space-between {
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -76,12 +76,4 @@ h2 {
 h3 {
   color: $color-03;
   font-size: $font-normal;
-}
-
-header,
-footer {
-  background-color: $bg-color;
-  p {
-    color: $color-02;
-  }
 }

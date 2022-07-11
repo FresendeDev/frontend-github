@@ -7,12 +7,15 @@
     float: left;
     font-size: $font-big;
     margin-top: 0;
+    padding: 2rem;
+    display: flex;
   }
   &__subtitle {
     float: left;
     font-size: $font-small;
     margin-left: $space-default;
     margin-top: $mt;
+    display: flex;
   }
   &__image {
     width: 100%;
@@ -20,9 +23,9 @@
     margin: $space-default auto;
   }
   &__description {
-    font-size: $font-medium;
+    font-size: $font-medium1;
     color: $color-05;
-    padding: 2rem 0;
+    padding: 2rem;
     width: 100%;
     font-weight: 700;
   }

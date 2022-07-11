@@ -1,0 +1,33 @@
+header {
+  display: block;
+  margin-bottom: 50px;
+}
+.header {
+  background-color: $bg-color;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: $font-big;
+  }
+
+  &__nav {
+    font-size: $font-big;
+  }
+}
+.footer footer {
+  background-color: $bg-color;
+  padding: 3rem 0;
+  display: block;
+  bottom: 0;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  &__nav {
+    font-size: $font-big;
+  }
+}
