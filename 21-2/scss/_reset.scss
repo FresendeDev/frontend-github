@@ -4,6 +4,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,7 +22,6 @@ section {
   display: block;
   //   float: left;
   margin: 0 auto;
-  width: 100%;
 }
 
 .container {
