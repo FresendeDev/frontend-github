@@ -1,0 +1,1 @@
+document.body.appendChild(function(){const n=document.createElement("h1");return n.innerHTML="ola mundo",n}());
