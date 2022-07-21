@@ -8,17 +8,20 @@ function rootStyle() {
 
 function titleComponent() {
   const elemH1 = document.createElement("h1");
-  elemH1.innerHTML = "Hello world 6";
+  elemH1.innerHTML = "ola mundo";
   elemH1.classList.add("title");
   return elemH1;
 }
 
 function imageComponent() {
-  const elemImg = new Image();
-  elemImg.src = img;
-  return elemImg;
+  const elenImg = new Image();
+  elenImg.src = img;
+  return elenImg;
 }
 
 rootStyle();
 document.getElementById("root").appendChild(titleComponent());
 document.getElementById("root").appendChild(imageComponent());
+
+// document.body.appendChild(titleComponent());
+// document.body.appendChild(imageComponent());

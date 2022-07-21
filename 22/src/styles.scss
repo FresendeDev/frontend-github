@@ -4,4 +4,14 @@ $font-defult: arial, helvetica, sans-serif;
 .title {
   color: $color-font;
   font-family: $font-defult;
+  font-size: 55px;
+}
+
+.container {
+  max-width: 1200px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
