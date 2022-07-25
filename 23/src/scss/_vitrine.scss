@@ -1,0 +1,66 @@
+.vitrine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+
+  &__item {
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    min-height: 20rem;
+    padding: 1rem;
+    position: relative;
+    width: 250px;
+    align-content: stretch;
+    flex-wrap: wrap;
+    &:hover {
+      animation: toTop;
+      animation-duration: 1s;
+      box-shadow: 0 0 2px 2px rgba(25, 25, 25, 0.2);
+    }
+  }
+
+  &__image {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $color-secondary;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__desc {
+    color: $font-color-secondary;
+    font-size: $font-size-default;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+
+  &__button {
+    box-shadow: 0 0 2px 2px rgba(0, 150, 255, 0.2);
+    background-color: $color-primary;
+    border-radius: 1rem;
+    border: 1px solid $color-primary;
+    color: $font-color-primary;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: $font-size-default;
+    text-decoration: none;
+    align-self: center;
+    margin-bottom: 2rem;
+    &:hover {
+      box-shadow: 0 0 2px 2px $color-secondary;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .vitrine {
+    justify-content: center;
+  }
+}
