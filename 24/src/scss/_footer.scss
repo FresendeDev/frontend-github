@@ -1,9 +1,11 @@
 footer {
+  .container {
     p {
-        color: $font-color-primary;
-        font-size: $font-size-default;
-        a {
-            color: $color-secondary;
-        }
+      color: $font-color-primary;
+      font-size: $font-size-default;
+      a {
+        color: $color-secondary;
+      }
     }
+  }
 }
