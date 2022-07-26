@@ -10,6 +10,10 @@ $font-size-nav: 1.8rem;
 @import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
 @import "nav";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
